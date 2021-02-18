@@ -1,5 +1,4 @@
 # LaboratorPA
-<br>
 Laborator 1
 <br>
 .  Compulsory - not yet
