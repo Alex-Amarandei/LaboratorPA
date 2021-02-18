@@ -1,8 +1,10 @@
+/*
+ * @author Alex Amarandei
+ */ 
+
 package lab1Package;
 
 public class Laborator1 {
-    // author: Amarandei Matei Alexandru
-
     public static void main(String[] args) {
     // Mandatory Task #1
         System.out.println("Hello World!");
