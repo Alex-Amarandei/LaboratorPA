@@ -1,7 +1,7 @@
 # LaboratorPA
 Laborator 1
 <br>
-.  Compulsory - not yet
+.  Compulsory - uploaded
 <br>
 .  Optional - not yet
 <br>
