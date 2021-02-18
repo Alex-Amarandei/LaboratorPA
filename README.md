@@ -1,7 +1,10 @@
 # LaboratorPA
-
-Laborator 1 
-  Compulsory - not yet
-  Optional - not yet
-  Bonus - not yet
+<br>
+Laborator 1
+<br>
+.  Compulsory - not yet
+<br>
+.  Optional - not yet
+<br>
+.  Bonus - not yet
   
