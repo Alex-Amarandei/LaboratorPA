@@ -1,3 +1,7 @@
+/*
+ * @author Alex Amarandei
+ */
+
 package compulsory;
 
 public class MainCompulsory {
