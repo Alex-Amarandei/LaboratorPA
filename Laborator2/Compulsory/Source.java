@@ -3,7 +3,6 @@
  */
 
 package compulsory;
-
 import java.util.Objects;
 
 public class Source {
