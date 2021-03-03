@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"optional","l":"Algorithm"},{"l":"All Classes","u":"allclasses-index.html"},{"p":"optional","l":"Destination"},{"p":"optional","l":"Factory"},{"p":"optional","l":"MainOptional"},{"p":"optional","l":"Problem"},{"p":"optional","l":"Solution"},{"p":"optional","l":"Source"},{"p":"optional","l":"Warehouse"}];updateSearchResults();
