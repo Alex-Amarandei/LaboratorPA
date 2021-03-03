@@ -187,6 +187,13 @@ public class Problem {
 
             description.append("\n");
         }
+        
+        for (int i = 0; i < destinations.length; i++) {
+            description.append(destinations[i]);
+            description.append(" has a demand of ");
+            description.append(demand[i]);
+            description.append(" units.\n");
+        }
 
         return description.toString();
     }
