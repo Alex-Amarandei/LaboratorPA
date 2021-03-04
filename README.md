@@ -6,7 +6,7 @@ Laborator 2
 <br>
 .  Optional - uploaded
 <br>
-.  Bonus - not yet
+.  Bonus - uploaded
 
 
 Laborator 1
