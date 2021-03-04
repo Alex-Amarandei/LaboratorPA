@@ -1,2 +1,4 @@
 # Laborator 2
-.  Compulsory - uploaded
+. Compulsory - uploaded
+. Optional - uploaded
+. Bonus - uploaded
