@@ -56,5 +56,15 @@ public class MainBonus {
         Solution exampleSolution = solver.vogelMethod(problem);
 
         System.out.println(exampleSolution);
+
+        // Bonus Task #2 - generate large random problem instances.
+
+        Problem randomlyGenerated = ProblemGenerator.generateProblemWith(1500, 1000);
+
+        // System.out.println(randomlyGenerated);
+        // the comment above reduces GC calls by a number of thousands
+
+        Solution randomSolution = solver.vogelMethod(randomlyGenerated);
+        System.out.println(randomSolution);
     }
 }
