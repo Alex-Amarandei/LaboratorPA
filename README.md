@@ -1,4 +1,4 @@
-# LaboratorPA
+# Laborator PA
 
 Laborator 5
 <br>
