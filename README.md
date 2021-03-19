@@ -14,7 +14,7 @@ Laborator 4
 <br>
 . Optional - uploaded
 <br>
-. Bonus - not yet
+. Bonus - uploaded
 
 Laborator 3
 <br>
