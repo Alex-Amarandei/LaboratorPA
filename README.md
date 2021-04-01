@@ -1,5 +1,13 @@
 # Laborator PA
 
+Laborator 7
+<br>
+. Compulsory - uploaded
+<br>
+. Optional - not yet
+<br>
+. Bonus - not yet
+
 Laborator 6
 <br>
 . Compulsory - uploaded
