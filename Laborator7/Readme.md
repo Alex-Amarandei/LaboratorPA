@@ -1,6 +1,6 @@
 # Laborator 7
 . Compulsory - uploaded
 <br>
-. Optional - not yet
+. Optional - uploaded
 <br>
 . Bonus - not yet
