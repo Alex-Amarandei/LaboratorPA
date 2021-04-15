@@ -13,7 +13,7 @@ public class Board {
     private volatile List<Token> tokens = Collections.synchronizedList(new ArrayList<>());
 
     public Board(int tokenMaxIndex) {
-        IntStream.range(1, tokenMaxIndex)
+        IntStream.rangeClosed(1, tokenMaxIndex)
                 .forEach(i -> IntStream.rangeClosed(1, tokenMaxIndex)
                         .forEach(j -> {
                             if (i != j)
