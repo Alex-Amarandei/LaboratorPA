@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="default">
+
+      <class>compulsory.entity.Genre</class>
+      <class>compulsory.entity.Movie</class>
+      <class>compulsory.entity.Person</class>
+      <properties>
+          <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/Lab8"/>
+          <property name="eclipselink.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      </properties>
+  </persistence-unit>
+</persistence>
