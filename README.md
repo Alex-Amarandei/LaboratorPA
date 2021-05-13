@@ -4,7 +4,7 @@ Laborator 10
 <br>
 . Compulsory - uploaded
 <br>
-. Optional - not yet
+. Optional - uploaded
 <br>
 . Bonus - not yet
 
