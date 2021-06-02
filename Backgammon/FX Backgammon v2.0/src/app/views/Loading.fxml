@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="400.0" stylesheets="@../stylesheets/Loading.css"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="app.controllers.LoadingController">
+    <children>
+        <ProgressIndicator fx:id="progressCircle" layoutX="196.0" layoutY="93.0" prefHeight="200.0" prefWidth="209.0"
+                           AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0"
+                           AnchorPane.topAnchor="100.0"/>
+    </children>
+</AnchorPane>

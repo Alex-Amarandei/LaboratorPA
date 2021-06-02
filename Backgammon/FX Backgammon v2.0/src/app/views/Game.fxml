@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backgroundPane" prefHeight="800.0" prefWidth="720.0" stylesheets="@../stylesheets/Game.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.GameController">
+   <children>
+      <VBox fx:id="layoutBox" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="720.0">
+         <children>
+            <StackPane fx:id="bezelPane" alignment="BOTTOM_CENTER" prefHeight="160.0" prefWidth="720.0">
+               <children>
+                  <Rectangle fx:id="bezel" arcHeight="160.0" arcWidth="160.0" fill="#5b5b5c" height="160.0" stroke="TRANSPARENT" strokeType="OUTSIDE" width="300.0" />
+                  <Label fx:id="gameRoomLabel" alignment="CENTER" contentDisplay="CENTER" text="Game Room #3" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <StackPane.margin>
+                        <Insets />
+                     </StackPane.margin>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="-80.0" />
+               </VBox.margin>
+            </StackPane>
+            <HBox fx:id="playerBox" alignment="BOTTOM_CENTER" prefHeight="40.0" prefWidth="720.0">
+               <children>
+                  <Label fx:id="whiteLabel" alignment="BOTTOM_LEFT" contentDisplay="CENTER" prefHeight="40.0" prefWidth="360.0" text="Alex" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="blackLabel" alignment="BOTTOM_RIGHT" contentDisplay="CENTER" prefHeight="40.0" prefWidth="360.0" text="Ioana" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <StackPane prefHeight="480.0" prefWidth="700.0">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+               <children>
+                  <Rectangle fx:id="board" arcHeight="5.0" arcWidth="5.0" fill="#1a0601" height="480.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="700.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1a0601" height="480.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" width="14.0" />
+                  <GridPane fx:id="leftGridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="460.0" prefWidth="333.0" StackPane.alignment="CENTER_LEFT">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="55.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints percentHeight="50.0" prefHeight="230.0" valignment="TOP" vgrow="SOMETIMES" />
+                      <RowConstraints percentHeight="50.0" prefHeight="230.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <StackPane.margin>
+                        <Insets left="10.0" />
+                     </StackPane.margin>
+                     <children>
+                        <StackPane prefHeight="230.0" prefWidth="55.5">
+                           <children>
+                              <Polygon fx:id="triangle" fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="2">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="3">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="4">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="5">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </GridPane>
+                  <GridPane fx:id="rightGridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="460.0" prefWidth="333.0" StackPane.alignment="CENTER_RIGHT">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="55.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.666666" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints percentHeight="50.0" prefHeight="230.0" valignment="TOP" vgrow="SOMETIMES" />
+                        <RowConstraints percentHeight="50.0" prefHeight="230.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <StackPane prefHeight="230.0" prefWidth="55.5">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="2">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="3">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="4">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="5">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -658.0, -30.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="TOP_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#cc5333" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                        <StackPane prefHeight="230.0" prefWidth="55.5" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <children>
+                              <Polygon fill="#0f2027" points="-684.5, -180.5, -629.5, -180.5, -657.0, -330.5" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                           </children>
+                        </StackPane>
+                     </children>
+                     <StackPane.margin>
+                        <Insets right="10.0" />
+                     </StackPane.margin>
+                  </GridPane>
+               </children>
+            </StackPane>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="720.0" spacing="60.0">
+               <children>
+                  <Button fx:id="rollButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#rollClicked" prefHeight="45.0" prefWidth="160.0" text="Roll">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="160.0" text="Captured" textAlignment="CENTER" />
+                  <Button fx:id="outButton" alignment="CENTER" contentDisplay="CENTER" disable="true" mnemonicParsing="false" prefHeight="45.0" prefWidth="160.0" text="Take Out">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="75.0" prefWidth="720.0" spacing="60.0">
+               <children>
+                  <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="75.0" prefWidth="160.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="firstDie" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resources/6White.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="secondDie" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resources/6White.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label fx:id="capturedNumberLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="160.0" text="0" textAlignment="CENTER" />
+                  <Label fx:id="outNumberLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="45.0" prefWidth="160.0" text="0" textAlignment="CENTER" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+.root {
+    -fx-font-size: 20px;
+    -fx-font-family: Quicksand;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 1em;
+}
+
+#backgroundPane {
+    -fx-background-color: linear-gradient(to bottom, #134E5E, #71B280);
+}
+
+#bezel {
+    -fx-fill: #4f7272;
+}
+
+#gameRoomLabel, #whiteLabel, #blackLabel {
+    -fx-font-size: 1.5em;
+}
+
+#whiteLabel {
+    -fx-text-fill: white;
+}
+
+#blackLabel {
+    -fx-text-fill: black;
+}
+
+#capturedNumberLabel, #outNumberLabel {
+    -fx-font-size: 1.5em;
+}
+
+#rollButton {
+    -fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #f12711, #f5af19);
+    -fx-background-radius: 60;
+}
+
+#outButton {
+    -fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #C6FFDD, #FBD786, #f7797d);
+    -fx-background-radius: 60;
+}
+
+#board{
+    -fx-fill: linear-gradient(to bottom,  #eacda3, #d6ae7b);
+}

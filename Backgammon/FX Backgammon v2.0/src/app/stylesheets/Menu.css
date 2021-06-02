@@ -1,0 +1,19 @@
+.root {
+    -fx-font-size: 100px;
+    -fx-font-family: Quicksand;
+    -fx-font-weight: bold;
+}
+
+#titleLabel {
+    -fx-font-size: 1em;
+    -fx-font-family: KAGE-Freebies;
+}
+
+#portLabel, #portField, #usernameLabel, #usernameField, #singlePlayerButton, #multiPlayerButton {
+    -fx-font-size: 0.25em;
+}
+
+#singlePlayerButton, #multiPlayerButton {
+    -fx-background-color: linear-gradient(from 25px 25px to 100px 100px, #348F50, #56B4D3);
+    -fx-background-radius: 60;
+}
