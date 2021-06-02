@@ -19,3 +19,4 @@ _Realizatori: Alex Amarandei, Ioana Pelin_
 3. GameRoom-uri monitorizate si lansate in executie de catre un thread GameRoomSupervisor
 4. Loading Screen pentru asteptarea repartizarii
 5. Legatura stransa intre fisierele .fxml si controllere prin injectare 
+6. Folosirea security.SecureRandom in detrimentul util.Random la alegerea zarurilor pentru permiterea aparitiei dublurilor
